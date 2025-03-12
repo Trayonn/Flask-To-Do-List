@@ -1,0 +1,6 @@
+<h2> Você possui {{ contagem }} tarefas. </h2>
+<ul>
+    {% for tarefa in tarefas %}
+        <li>ID: {{ tarefa.id }} </br> {{ tarefa.titulo }} </br> Descrição: {{ tarefa.descricao }} </br> Concluída: <input type = "checkbox"> Excluir: <input type = "checkbox"></li>
+    {% endfor %}
+</ul>

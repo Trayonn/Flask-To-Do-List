@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Flask</title>
+</head>
+<body>
+    <h1>Digite o título da tarefa: </h1>
+    <form action="/tarefa" method="post">
+        <input type="text" name="titulo" placeholder="Insira o titulo da tarefa." required>
+        <input type="text" name="descricao" placeholder = "Insira a descrição." required>
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="/lista" method="get">
+      <h1>Ver lista de tarefas: </h1>
+      <input type = "submit" value = "Lista">
+    </form>   
+</body>
+</html>
